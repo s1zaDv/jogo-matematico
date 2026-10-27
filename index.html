@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Desafio Matemático</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: Arial, sans-serif;
+        min-height: 100vh;
+        background: linear-gradient(135deg, #0f172a, #25134d);
+        color: #f8fafc;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 24px;
+      }
+
+      .container {
+        width: 100%;
+        max-width: 480px;
+      }
+
+      .card {
+        background: rgba(255, 255, 255, 0.06);
+        border: 1px solid rgba(255, 255, 255, 0.12);
+        border-radius: 24px;
+        padding: 36px 30px;
+        text-align: center;
+        box-shadow: 0 24px 60px rgba(0, 0, 0, 0.3);
+        backdrop-filter: blur(12px);
+      }
+
+      .icone {
+        width: 78px;
+        height: 78px;
+        margin: 0 auto 24px;
+        border-radius: 22px;
+        background: linear-gradient(135deg, #7c3aed, #4f46e5);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 36px;
+        font-weight: bold;
+        box-shadow: 0 8px 28px rgba(124, 58, 237, 0.3);
+      }
+
+      .etiqueta {
+        display: inline-block;
+        background: rgba(167, 139, 250, 0.12);
+        color: #c4b5fd;
+        border: 1px solid rgba(167, 139, 250, 0.2);
+        border-radius: 30px;
+        padding: 7px 13px;
+        font-size: 12px;
+        margin-bottom: 18px;
+      }
+
+      h1 {
+        font-size: 29px;
+        margin-bottom: 14px;
+        letter-spacing: -0.5px;
+      }
+
+      .descricao {
+        color: #b9c2d8;
+        font-size: 15px;
+        line-height: 1.7;
+        margin-bottom: 28px;
+      }
+
+      .info {
+        background: rgba(255, 255, 255, 0.04);
+        border: 1px solid rgba(255, 255, 255, 0.08);
+        border-radius: 16px;
+        padding: 20px;
+        text-align: left;
+        margin-bottom: 20px;
+      }
+
+      .info h2 {
+        font-size: 16px;
+        margin-bottom: 14px;
+      }
+
+      .lista {
+        list-style: none;
+      }
+
+      .lista li {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        color: #cbd5e1;
+        font-size: 14px;
+        padding: 10px 0;
+      }
+
+      .lista li + li {
+        border-top: 1px solid rgba(255, 255, 255, 0.06);
+      }
+
+      .numero {
+        width: 30px;
+        height: 30px;
+        flex-shrink: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 9px;
+        background: rgba(124, 58, 237, 0.18);
+        color: #c4b5fd;
+        font-weight: bold;
+      }
+
+      .aviso {
+        background: rgba(59, 130, 246, 0.08);
+        border: 1px solid rgba(96, 165, 250, 0.15);
+        border-radius: 14px;
+        padding: 16px;
+        color: #bfdbfe;
+        font-size: 13px;
+        line-height: 1.6;
+      }
+
+      .rodape {
+        margin-top: 26px;
+        color: #7f8da8;
+        font-size: 12px;
+      }
+
+      @media (max-width: 480px) {
+        .card {
+          padding: 28px 20px;
+        }
+
+        h1 {
+          font-size: 25px;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <main class="container">
+      <section class="card">
+        <div class="icone">∑</div>
+
+        <span class="etiqueta">DESAFIO DE LÓGICA</span>
+
+        <h1>Jogo Matemático</h1>
+
+        <p class="descricao">
+          Está preparado para testar seus conhecimentos? Resolva os desafios e
+          tente alcançar a pontuação máxima!
+        </p>
+
+        <div class="info">
+          <h2>🎯 Como funciona?</h2>
+
+          <ul class="lista">
+            <li>
+              <span class="numero">01</span>
+              Responda a 4 perguntas matemáticas.
+            </li>
+            <li>
+              <span class="numero">02</span>
+              Cada acerto vale 30 pontos.
+            </li>
+            <li>
+              <span class="numero">03</span>
+              Alcance 100 pontos para vencer.
+            </li>
+          </ul>
+        </div>
+
+        <div class="aviso">
+          💡 Prepare o raciocínio, concentre-se e boa sorte no desafio!
+        </div>
+
+        <p class="rodape">Projeto JavaScript • Aprendendo na prática</p>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
